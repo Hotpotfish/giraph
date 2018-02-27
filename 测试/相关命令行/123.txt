@@ -1,0 +1,69 @@
+1.  package org.apache.giraph.counters;  
+2.    
+3.  import java.util.Iterator;  
+4.  import java.util.Map;  
+5.    
+6.  import org.apache.hadoop.mapreduce.Mapper.Context;  
+7.  import com.google.common.collect.Maps;  
+8.    
+9.  /** 
+10.  * Hadoop Counters in group "Giraph Messages" for counting every superstep 
+11.  * message count. 
+12.  */  
+13.   
+14. public class GiraphComputedVertex extends HadoopCountersBase {  
+15.     /** Counter group name for the giraph Messages */  
+16.     public static final String GROUP_NAME = "Giraph Computed Vertex";  
+17.   
+18.     /** Singleton instance for everyone to use */  
+19.     private static GiraphComputedVertex INSTANCE;  
+20.   
+21.     /** superstep time in msec */  
+22.     private final Map<Long, GiraphHadoopCounter> superstepVertexCount;  
+23.   
+24.     private GiraphComputedVertex(Context context) {  
+25.         super(context, GROUP_NAME);  
+26.         superstepVertexCount = Maps.newHashMap();  
+27.     }  
+28.   
+29.     /** 
+30.      * Instantiate with Hadoop Context. 
+31.      *  
+32.      * @param context 
+33.      *            Hadoop Context to use. 
+34.      */  
+35.     public static void init(Context context) {  
+36.         INSTANCE = new GiraphComputedVertex(context);  
+37.     }  
+38.   
+39.     /** 
+40.      * Get singleton instance. 
+41.      *  
+42.      * @return singleton GiraphTimers instance. 
+43.      */  
+44.     public static GiraphComputedVertex getInstance() {  
+45.         return INSTANCE;  
+46.     }  
+47.   
+48.     /** 
+49.      * Get counter for superstep messages 
+50.      *  
+51.      * @param superstep 
+52.      * @return 
+53.      */  
+54.     public GiraphHadoopCounter getSuperstepVertexCount(long superstep) {  
+55.         GiraphHadoopCounter counter = superstepVertexCount.get(superstep);  
+56.         if (counter == null) {  
+57.             String counterPrefix = "Superstep: " + superstep+" ";  
+58.             counter = getCounter(counterPrefix);  
+59.             superstepVertexCount.put(superstep, counter);  
+60.         }  
+61.         return counter;  
+62.     }  
+63.   
+64.     @Override  
+65.     public Iterator<GiraphHadoopCounter> iterator() {  
+66.         return superstepVertexCount.values().iterator();  
+67.     }  
+68. }  
+

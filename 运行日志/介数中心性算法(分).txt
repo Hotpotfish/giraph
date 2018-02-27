@@ -1,0 +1,11 @@
+16/03/16 23:43:43 INFO mapred.JobClient:   Giraph Timers
+16/03/16 23:43:43 INFO mapred.JobClient:     Total (milliseconds)=2589
+16/03/16 23:43:43 INFO mapred.JobClient:     Superstep 3 (milliseconds)=323
+16/03/16 23:43:43 INFO mapred.JobClient:     Superstep 4 (milliseconds)=323
+16/03/16 23:43:43 INFO mapred.JobClient:     Superstep 10 (milliseconds)=242
+16/03/16 23:43:43 INFO mapred.JobClient:     Setup (milliseconds)=564
+16/03/16 23:43:43 INFO mapred.JobClient:     Shutdown (milliseconds)=130
+16/03/16 23:43:43 INFO mapred.JobClient:     Superstep 7 (milliseconds)=107
+16/03/16 23:43:43 INFO mapred.JobClient:     Superstep 9 (milliseconds)=114
+16/03/16 23:43:43 INFO mapred.JobClient:     Superstep 0 (milliseconds)=179
+16/03/16 23:43:43 INFO mapred.JobClient:     Superstep 8 (milliseconds)=111

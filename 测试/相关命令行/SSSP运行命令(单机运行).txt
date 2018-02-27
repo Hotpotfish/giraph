@@ -1,0 +1,11 @@
+org.apache.giraph.examples.SimpleShortestPathsVertex -vif org.apache.giraph.io.formats.JsonLongDoubleFloatDoubleVertexInputFormat -vip /home/fxh/trunk4/tiny_graph.txt -of org.apache.giraph.io.formats.IdWithValueTextOutputFormat -op /home/fxh/trunk4/output-sssp-debug -w 1
+-ca giraph.SplitMasterWorker=false
+
+
+
+
+
+
+org.apache.giraph.examples.WeaklyConnectedComponentsVertex -vif
+org.apache.giraph.examples.LongLongNullTextInputFormat -vip /home/fxh/trunk4/in.txt -of org.apache.giraph.examples.VertexWithLongValueNullEdgeTextOutputFormat -op /home/fxh/trunk4/o1 -w 1
+-ca giraph.SplitMasterWorker=false

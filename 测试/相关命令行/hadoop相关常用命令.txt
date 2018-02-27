@@ -1,0 +1,4 @@
+hadoop jar <文件路径> :用hadoop 引用相关jar包
+hadoop fs -get <欲下载目录>  <文件在HDFS上的目录> : 从HDFS上下载文件
+hadoop fs -rmr <文件目录> :递归算法依次删除文件夹下的所有文件。
+hadoop fs -put <文件在本地的位置>  <目标文件在HDFS上的位置> : 将本地文件复制到HDFS上面。

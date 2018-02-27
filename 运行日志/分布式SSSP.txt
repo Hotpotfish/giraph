@@ -1,0 +1,59 @@
+15/07/20 03:10:52 INFO mapred.JobClient: Running job: job_201507200101_0002
+15/07/20 03:10:53 INFO mapred.JobClient:  map 0% reduce 0%
+15/07/20 03:11:16 INFO mapred.JobClient:  map 25% reduce 0%
+15/07/20 03:11:17 INFO mapred.JobClient:  map 75% reduce 0%
+15/07/20 03:11:20 INFO mapred.JobClient:  map 100% reduce 0%
+15/07/20 03:11:21 INFO mapred.JobClient: Job complete: job_201507200101_0002
+15/07/20 03:11:21 INFO mapred.JobClient: Counters: 45
+15/07/20 03:11:21 INFO mapred.JobClient:   Job Counters 
+15/07/20 03:11:21 INFO mapred.JobClient:     SLOTS_MILLIS_MAPS=60358
+15/07/20 03:11:21 INFO mapred.JobClient:     Total time spent by all reduces waiting after reserving slots (ms)=0
+15/07/20 03:11:21 INFO mapred.JobClient:     Total time spent by all maps waiting after reserving slots (ms)=0
+15/07/20 03:11:21 INFO mapred.JobClient:     Launched map tasks=4
+15/07/20 03:11:21 INFO mapred.JobClient:     SLOTS_MILLIS_REDUCES=0
+15/07/20 03:11:21 INFO mapred.JobClient:   Giraph Timers
+15/07/20 03:11:21 INFO mapred.JobClient:     Total (milliseconds)=4694
+15/07/20 03:11:21 INFO mapred.JobClient:     Superstep 3 (milliseconds)=122
+15/07/20 03:11:21 INFO mapred.JobClient:     Superstep 4 (milliseconds)=142
+15/07/20 03:11:21 INFO mapred.JobClient:     Superstep 12 (milliseconds)=115
+15/07/20 03:11:21 INFO mapred.JobClient:     Superstep 10 (milliseconds)=130
+15/07/20 03:11:21 INFO mapred.JobClient:     Superstep 11 (milliseconds)=129
+15/07/20 03:11:21 INFO mapred.JobClient:     Setup (milliseconds)=1098
+15/07/20 03:11:21 INFO mapred.JobClient:     Shutdown (milliseconds)=579
+15/07/20 03:11:21 INFO mapred.JobClient:     Superstep 7 (milliseconds)=198
+15/07/20 03:11:21 INFO mapred.JobClient:     Superstep 9 (milliseconds)=146
+15/07/20 03:11:21 INFO mapred.JobClient:     Superstep 0 (milliseconds)=145
+15/07/20 03:11:21 INFO mapred.JobClient:     Superstep 8 (milliseconds)=177
+15/07/20 03:11:21 INFO mapred.JobClient:     Superstep 14 (milliseconds)=143
+15/07/20 03:11:21 INFO mapred.JobClient:     Input superstep (milliseconds)=693
+15/07/20 03:11:21 INFO mapred.JobClient:     Superstep 6 (milliseconds)=150
+15/07/20 03:11:21 INFO mapred.JobClient:     Superstep 5 (milliseconds)=152
+15/07/20 03:11:21 INFO mapred.JobClient:     Superstep 13 (milliseconds)=165
+15/07/20 03:11:21 INFO mapred.JobClient:     Superstep 2 (milliseconds)=125
+15/07/20 03:11:21 INFO mapred.JobClient:     Superstep 1 (milliseconds)=277
+15/07/20 03:11:21 INFO mapred.JobClient:   Giraph Stats
+15/07/20 03:11:21 INFO mapred.JobClient:     Aggregate edges=8725
+15/07/20 03:11:21 INFO mapred.JobClient:     Superstep=15
+15/07/20 03:11:21 INFO mapred.JobClient:     Last checkpointed superstep=0
+15/07/20 03:11:21 INFO mapred.JobClient:     Current workers=3
+15/07/20 03:11:21 INFO mapred.JobClient:     Current master task partition=0
+15/07/20 03:11:21 INFO mapred.JobClient:     Sent messages=0
+15/07/20 03:11:21 INFO mapred.JobClient:     Aggregate finished vertices=2200
+15/07/20 03:11:21 INFO mapred.JobClient:     Aggregate vertices=2200
+15/07/20 03:11:21 INFO mapred.JobClient:   File Output Format Counters 
+15/07/20 03:11:21 INFO mapred.JobClient:     Bytes Written=0
+15/07/20 03:11:21 INFO mapred.JobClient:   FileSystemCounters
+15/07/20 03:11:21 INFO mapred.JobClient:     HDFS_BYTES_READ=104729
+15/07/20 03:11:21 INFO mapred.JobClient:     FILE_BYTES_WRITTEN=244380
+15/07/20 03:11:21 INFO mapred.JobClient:     HDFS_BYTES_WRITTEN=25016
+15/07/20 03:11:21 INFO mapred.JobClient:   File Input Format Counters 
+15/07/20 03:11:21 INFO mapred.JobClient:     Bytes Read=0
+15/07/20 03:11:21 INFO mapred.JobClient:   Map-Reduce Framework
+15/07/20 03:11:21 INFO mapred.JobClient:     Map input records=4
+15/07/20 03:11:21 INFO mapred.JobClient:     Physical memory (bytes) snapshot=333475840
+15/07/20 03:11:21 INFO mapred.JobClient:     Spilled Records=0
+15/07/20 03:11:21 INFO mapred.JobClient:     CPU time spent (ms)=7650
+15/07/20 03:11:21 INFO mapred.JobClient:     Total committed heap usage (bytes)=62914560
+15/07/20 03:11:21 INFO mapred.JobClient:     Virtual memory (bytes) snapshot=2965766144
+15/07/20 03:11:21 INFO mapred.JobClient:     Map output records=0
+15/07/20 03:11:21 INFO mapred.JobClient:     SPLIT_RAW_BYTES=176

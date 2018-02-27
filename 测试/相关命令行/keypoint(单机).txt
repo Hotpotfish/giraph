@@ -1,0 +1,3 @@
+org.apache.giraph.examples.KeyPointVertex -vif
+org.apache.giraph.io.formats.JsonLongDoubleFloatDoubleVertexInputFormat -vip /home/fxh/trunk4/fd.txt -of org.apache.giraph.io.formats.IdWithValueTextOutputFormat -op /home/fxh/trunk4/kvpt -w 1
+-ca giraph.SplitMasterWorker=false

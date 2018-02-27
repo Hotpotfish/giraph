@@ -1,0 +1,8 @@
+hadoop jar /home/fxh/hadoop-1.2.1/giraph-1.0.0/giraph-examples/target/giraph-examples-1.0.0-for-hadoop-0.20.203.0-jar-with-dependencies.jar org.apache.giraph.GiraphRunner org.apache.giraph.examples.SimpleShortestPathsVertex -vif org.apache.giraph.io.formats.JsonLongDoubleFloatDoubleVertexInputFormat -vip /in/tiny_graph.txt -of org.apache.giraph.io.formats.IdWithValueTextOutputFormat -op /outShortest -w 2
+
+
+
+
+
+
+hadoop jar /home/fxh/hadoop-1.2.1/giraph-1.0.0/giraph-examples/target/giraph-examples-1.0.0-for-hadoop-0.20.203.0-jar-with-dependencies.jar org.apache.giraph.GiraphRunner -Dgiraph.userPartitionCount=2 org.apache.giraph.examples.WeaklyConnectedComponentsVertex -vif org.apache.giraph.examples.LongLongNullTextInputFormat -vip /in -of org.apache.giraph.examples.VertexWithLongValueNullEdgeTextOutputFormat -op /opa -w 2
